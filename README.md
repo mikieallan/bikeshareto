@@ -12,9 +12,15 @@ Think of this as a kind of Spotify Wrapped, but for BikeShare TO. BikeShare TO d
 2. Get trip history (via parsing website's HTML), comes back 50 at a time so have to interate through
 3. Get station location from OpenData TO
 4. Match trip history to station GPS coordinates
-5. Find missing stations, and match to manually created dictionary with station name and GPS coordinates
-6. Calculate distance of every trip, and average speed for each trip
+5. Cleans data: Removes trips with same start and end station, removes trips with null end location (broken), finds missing stations from OpenData TO list, and matches to manually created dictionary with station name and GPS coordinates
+6. Calculate distance of every trip from Google Maps API, and average speed for each trip
 7. Calculate number of trips per month, total and average distance per month, find top 5 most common routes
+8. Caching / saving functionality, to prevent unnecessary API calls. Stores data in a caching.json file, then checks against that to only pull new trips from PBSC and get the distance from Google Maps for only those trips. 
+9. Year in Review creation: Using the template, programatically inserts the user-specific variables and graphs 
+
+### Future functionality
+1. Write bikeshare activites to Strava
+2. (Possibly) Extract out of a jupyter notebook, could host on a website
 
 ### How to use:
 1. Download this repo
@@ -36,3 +42,5 @@ googlemaps
 matplotlib
 panda
 Requests
+
+
