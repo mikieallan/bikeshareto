@@ -1,10 +1,12 @@
-# BIKESHARE TO ANALYTICS
+# BIKESHARE TORONTO ANALYTICS + STRAVA CONNECTION
 
 
 ### Overview
 **NOTE: This is an unofficial doc, not sanctioned by BikeShare TO and there is no partnership**
 
 Think of this as a kind of Spotify Wrapped, but for BikeShare TO. BikeShare TO doesn't have any usage stats / analytics, so I thought I'd take a crack at building it out myself.
+
+Additionally, it can also connect to a Strava account and post rides there.
 
 
 ### Current functionality
@@ -17,10 +19,10 @@ Think of this as a kind of Spotify Wrapped, but for BikeShare TO. BikeShare TO d
 7. Calculate number of trips per month, total and average distance per month, find top 5 most common routes
 8. Caching / saving functionality, to prevent unnecessary API calls. Stores data in a caching.json file, then checks against that to only pull new trips from PBSC and get the distance from Google Maps for only those trips. 
 9. Year in Review creation: Using the template, programatically inserts the user-specific variables and graphs 
+10. Login to Strava, connect 
 
 ### Future functionality
-1. Write bikeshare activites to Strava
-2. (Possibly) Extract out of a jupyter notebook, could host on a website
+1. (Possibly) Extract out of a jupyter notebook, could host on a website
 
 ### How to use:
 1. Download this repo
