@@ -19,7 +19,7 @@ Additionally, it can also connect to a Strava account and post rides there.
 7. Calculate number of trips per month, total and average distance per month, find top 5 most common routes
 8. Caching / saving functionality, to prevent unnecessary API calls. Stores data in a caching.json file, then checks against that to only pull new trips from PBSC and get the distance from Google Maps for only those trips. 
 9. Year in Review creation: Using the template, programatically inserts the user-specific variables and graphs 
-10. Login to Strava, connect 
+10. Login to Strava, open login in testing window, and get auth code. Writes PBSC trips from cached_json to Strava account, saving an updated cached_json back.
 
 ### Future functionality
 1. (Possibly) Extract out of a jupyter notebook, could host on a website
@@ -38,11 +38,10 @@ Additionally, it can also connect to a Strava account and post rides there.
 1. BikeShare TO occasionally changes the stations, and therefore the lookup will fail. I have created a manual lookup based on station name, where I have added the Lat and Lon coordinates. There is code already to find the unmatched trips, you'll just need to manually add the coordinates for the station that you have that doesn't have a match.
 
 ### Dependencies
-beautifulsoup4
-env
-googlemaps
-matplotlib
-panda
-Requests
-
-
+- beautifulsoup4
+- env
+- googlemaps
+- matplotlib
+- panda
+- Requests
+- More for Strava
