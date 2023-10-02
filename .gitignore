@@ -11,3 +11,5 @@ Strava/chromedriver-mac-arm64
 Strava/__pycache__
 Strava/gpx_files
 .DS_Store
+trip_html_response.html
+cookies_for_html_call
